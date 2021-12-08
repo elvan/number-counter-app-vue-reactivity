@@ -7,8 +7,17 @@ const app = Vue.createApp({
   },
 
   methods: {
-    setName(event, lastName) {
-      this.name = event.target.value;
+    // setName(event, lastName) {
+    //   this.name = event.target.value;
+    // },
+
+    outputFullName() {
+      console.log('Output Full Name Running');
+      if (this.name.trim() === '') {
+        return '';
+      }
+
+      return this.name + ' ' + 'Hidayat';
     },
 
     add(num) {
